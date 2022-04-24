@@ -5,12 +5,14 @@ import {
   getUser,
   // updateTask,
   deleteUser,
+  loginUser,
 } from "../controllers/users.controller.js";
 
 
 const router = express.Router();
 // User CRUD
-router.post("/users", createUser);
+router.post("/signin,", loginUser)
+router.post("/signup", createUser);
 router.get("/users", getAllUsers);
 router.get("/users/:id", getUser);
 // router.put("/tasks/:id", updateTask);
