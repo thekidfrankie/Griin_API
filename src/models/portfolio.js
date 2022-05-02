@@ -1,6 +1,7 @@
 import { DataTypes } from "sequelize";
 import { sequelize } from "../database/database.js";
-
+import { PortfolioComposition } from "./portfolioComposition.js";
+import { Etf } from "./Etf.js";
 // id PK
 // name: string
 // risk profile: string
@@ -23,20 +24,22 @@ export const Portfolio = sequelize.define(
     risk_profile: {
       type: DataTypes.STRING,
     },
-    etf: {
-      type: DataTypes.JSON,
-    },
+  // etf: {
+  //   type: DataTypes.JSON,
+  // },
     rentability: {
-      renta: DataTypes.INTEGER,
+      type: DataTypes.FLOAT,
     },
     composition: {
-      renta: DataTypes.JSON,
+      type: DataTypes.JSON,
     },
     carbon_footprint: {
-      renta: DataTypes.INTEGER,
+      type: DataTypes.FLOAT,
     },
   },
   {
-    timestamps: true,
+    timestamps: false,
   }
 );
+Portfolio.belongsToMany(Etf, { through: PortfolioComposition });
+Etf.belongsToMany(Portfolio, { through: PortfolioComposition });

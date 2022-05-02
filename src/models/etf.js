@@ -20,20 +20,23 @@ export const Etf = sequelize.define(
     name: {
       type: DataTypes.STRING,
     },
-    administrator: {
-      type: DataTypes.STRING,
-    },
     nemo: {
       type: DataTypes.STRING,
     },
-    url: {
-      renta: DataTypes.STRING,
+    administrator: {
+      type: DataTypes.STRING,
     },
     value_type: {
-      renta: DataTypes.STRING,
+      type: DataTypes.STRING,
     },
-    financial_instrument: {
-      renta: DataTypes.STRING,
+    esg_score: {
+      type: DataTypes.FLOAT
+    },
+    carbon_intensity: {
+      type: DataTypes.FLOAT,
+    },
+    url: {
+      type: DataTypes.STRING,
     },
   },
   {

@@ -1,5 +1,5 @@
 import Sequelize from "sequelize";
-import  {configs}  from "./config.js";
+import  {configs}  from "./config/configForNode.js";
 
 const db = configs.db;
 export const sequelize = new Sequelize(

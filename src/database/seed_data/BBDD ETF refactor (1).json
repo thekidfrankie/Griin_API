@@ -1,0 +1,578 @@
+[
+ {
+  "name": "Adasina Social Justice All Cap Global ETF",
+  "nemo": "JSTC",
+  "administrator": "Adasina",
+  "value_type": "RV",
+  "esg_score": 0,
+  "carbon_intensity": 0,
+  "url": "https://www.adasinaetf.com/"
+ },
+ {
+  "name": "U.S. Vegan Climate ETF",
+  "nemo": "VEGN",
+  "administrator": "Beyond",
+  "value_type": "RV",
+  "esg_score": 0,
+  "carbon_intensity": 31.16,
+  "url": "https://veganetf.com/"
+ },
+ {
+  "name": "iShares Global Green Bond ETF",
+  "nemo": "BGRN",
+  "administrator": "Blackrock",
+  "value_type": "RF",
+  "esg_score": 7.44,
+  "carbon_intensity": 964.02,
+  "url": "https://www.blackrock.com/americas-offshore/en/products/305296/ishares-usd-green-bond-etf"
+ },
+ {
+  "name": "iShares MSCI ACWI Low Carbon Target ETF",
+  "nemo": "CRBN",
+  "administrator": "Blackrock",
+  "value_type": "RV",
+  "esg_score": 7.96,
+  "carbon_intensity": 62.31,
+  "url": "https://www.blackrock.com/americas-offshore/en/products/271054/ishares-msci-acwi-low-carbon-target-etf"
+ },
+ {
+  "name": "iShares MSCI KLD 400 Social ETF",
+  "nemo": "DSI",
+  "administrator": "Blackrock",
+  "value_type": "RV",
+  "esg_score": 8.48,
+  "carbon_intensity": 69.31,
+  "url": "https://www.blackrock.com/americas-offshore/en/products/239667/ishares-msci-kld-400-social-etf"
+ },
+ {
+  "name": "iShares ESG Aware U.S. Aggregate Bond ETF",
+  "nemo": "EAGG",
+  "administrator": "Blackrock",
+  "value_type": "RV",
+  "esg_score": 7.15,
+  "carbon_intensity": 153.97,
+  "url": "https://www.blackrock.com/americas-offshore/en/products/305252/ishares-esg-aware-u-s-aggregate-bond-etf"
+ },
+ {
+  "name": "iShares ESG Aware Conservative Allocation ETF",
+  "nemo": "EAOK",
+  "administrator": "Blackrock",
+  "value_type": "Hybrido",
+  "esg_score": 7.54,
+  "carbon_intensity": 128.59,
+  "url": "https://www.blackrock.com/americas-offshore/en/products/314417/ishares-esg-aware-conservative-allocation-etf"
+ },
+ {
+  "name": "iShares ESG Aware Moderate Allocation ETF",
+  "nemo": "EAOM",
+  "administrator": "Blackrock",
+  "value_type": "Hybrido",
+  "esg_score": 7.75,
+  "carbon_intensity": 123.43,
+  "url": "https://www.blackrock.com/americas-offshore/en/products/314411/ishares-esg-aware-moderate-allocation-etf"
+ },
+ {
+  "name": "iShares ESG Aware MSCI EAFE ETF",
+  "nemo": "ESGD",
+  "administrator": "Blackrock",
+  "value_type": "RV",
+  "esg_score": 9.82,
+  "carbon_intensity": 110.52,
+  "url": "https://www.blackrock.com/americas-offshore/en/products/283778/ishares-esg-aware-msci-eafe-etf"
+ },
+ {
+  "name": "iShares ESG Aware MSCI EM ETF",
+  "nemo": "ESGE",
+  "administrator": "Blackrock",
+  "value_type": "RV",
+  "esg_score": 8.47,
+  "carbon_intensity": 167.67,
+  "url": "https://www.blackrock.com/americas-offshore/en/products/283777/ishares-esg-aware-msci-em-etf"
+ },
+ {
+  "name": "iShares ESG Aware MSCI USA ETF",
+  "nemo": "ESGU",
+  "administrator": "Blackrock",
+  "value_type": "RV",
+  "esg_score": 8.95,
+  "carbon_intensity": 93.86,
+  "url": "https://www.blackrock.com/americas-offshore/en/products/286007/ishares-esg-aware-msci-usa-etf"
+ },
+ {
+  "name": "iShares ESG Aware MSCI USA Small-Cap ETF",
+  "nemo": "ESML",
+  "administrator": "Blackrock",
+  "value_type": "RV",
+  "esg_score": 7.28,
+  "carbon_intensity": 129.33,
+  "url": "https://www.blackrock.com/americas-offshore/en/products/296644/ishares-esg-aware-msci-usa-small-cap-etf"
+ },
+ {
+  "name": "iShares Global Clean Energy ETF",
+  "nemo": "ICLN",
+  "administrator": "Blackrock",
+  "value_type": "RV",
+  "esg_score": 8.66,
+  "carbon_intensity": 308.86,
+  "url": "https://www.blackrock.com/americas-offshore/en/products/239738/ishares-global-clean-energy-etf"
+ },
+ {
+  "name": "BlackRock World ex U.S. Carbon Transition Readiness ETF ",
+  "nemo": "LCTD",
+  "administrator": "Blackrock",
+  "value_type": "RV",
+  "esg_score": 9.76,
+  "carbon_intensity": 106.04,
+  "url": "https://www.blackrock.com/americas-offshore/en/products/318216/blackrock-world-ex-u-s-carbon-transition-readiness-etf"
+ },
+ {
+  "name": "BlackRock U.S. Carbon Transition Readiness ETF ",
+  "nemo": "LCTU",
+  "administrator": "Blackrock",
+  "value_type": "RV",
+  "esg_score": 8.05,
+  "carbon_intensity": 73.65,
+  "url": "https://www.blackrock.com/americas-offshore/en/products/318215/blackrock-u-s-carbon-transition-readiness-etf"
+ },
+ {
+  "name": "iShares ESG MSCI EM Leaders ETF",
+  "nemo": "LDEM",
+  "administrator": "Blackrock",
+  "value_type": "RV",
+  "esg_score": 7.84,
+  "carbon_intensity": 212.22,
+  "url": "https://www.blackrock.com/americas-offshore/en/products/312222/ishares-esg-msci-em-leaders-etf"
+ },
+ {
+  "name": "iShares Paris-Aligned Climate MSCI USA ETF",
+  "nemo": "PABU",
+  "administrator": "Blackrock",
+  "value_type": "RV",
+  "esg_score": 0,
+  "carbon_intensity": 0,
+  "url": "https://www.blackrock.com/americas-offshore/en/products/325725/ishares-paris-aligned-climate-msci-usa-etf"
+ },
+ {
+  "name": "iShares MSCI Global Impact ETF",
+  "nemo": "SDG",
+  "administrator": "Blackrock",
+  "value_type": "RV",
+  "esg_score": 7.99,
+  "carbon_intensity": 146.24,
+  "url": "https://www.blackrock.com/americas-offshore/en/products/283378/ishares-msci-global-sustainable-development-goals-etf"
+ },
+ {
+  "name": "iShares MSCI USA ESG Select ETF",
+  "nemo": "SUSA",
+  "administrator": "Blackrock",
+  "value_type": "RV",
+  "esg_score": 9.56,
+  "carbon_intensity": 52.4,
+  "url": "https://www.blackrock.com/americas-offshore/en/products/239692/ishares-msci-usa-esg-select-etf"
+ },
+ {
+  "name": "iShares ESG Aware 1-5 Year USD Corporate Bond ETF",
+  "nemo": "SUSB",
+  "administrator": "Blackrock",
+  "value_type": "RF",
+  "esg_score": 10,
+  "carbon_intensity": 112.15,
+  "url": "https://www.blackrock.com/americas-offshore/en/products/288490/ishares-esg-aware-1-5-year-usd-corporate-bond-etf"
+ },
+ {
+  "name": "iShares ESG Aware USD Corporate Bond ETF",
+  "nemo": "SUSC",
+  "administrator": "Blackrock",
+  "value_type": "RF",
+  "esg_score": 8.92,
+  "carbon_intensity": 166.12,
+  "url": "https://www.blackrock.com/americas-offshore/en/products/288488/ishares-esg-aware-usd-corporate-bond-etf"
+ },
+ {
+  "name": "iShares ESG MSCI USA Leaders ETF",
+  "nemo": "SUSL",
+  "administrator": "Blackrock",
+  "value_type": "RV",
+  "esg_score": 8.37,
+  "carbon_intensity": 61.97,
+  "url": "https://www.blackrock.com/americas-offshore/en/products/308574/ishares-esg-msci-usa-leaders-etf"
+ },
+ {
+  "name": "iShares ESG Advanced MSCI USA ETF",
+  "nemo": "USXF",
+  "administrator": "Blackrock",
+  "value_type": "RV",
+  "esg_score": 9.38,
+  "carbon_intensity": 64.25,
+  "url": "https://www.blackrock.com/americas-offshore/en/products/314365/ishares-esg-advanced-msci-usa-etf"
+ },
+ {
+  "name": "iShares ESG Screened S&P 500 ETF",
+  "nemo": "XVV",
+  "administrator": "Blackrock",
+  "value_type": "RV",
+  "esg_score": 8,
+  "carbon_intensity": 84.36,
+  "url": "https://www.blackrock.com/americas-offshore/en/products/315917/ishares-esg-screened-s-p-500-etf"
+ },
+ {
+  "name": "FIDELITY WOMENS LEADERSHIP ETF",
+  "nemo": "FDWM",
+  "administrator": "Fidelity",
+  "value_type": "RV",
+  "esg_score": 8.67,
+  "carbon_intensity": 80.19,
+  "url": "https://screener.fidelity.com/ftgw/etf/goto/snapshot/snapshot.jhtml?symbols=FDWM"
+ },
+ {
+  "name": "FIDELITY CLEAN ENERGY ETF",
+  "nemo": "FRNW",
+  "administrator": "Fidelity",
+  "value_type": "RV",
+  "esg_score": 7.9399999999999995,
+  "carbon_intensity": 414.7,
+  "url": "https://screener.fidelity.com/ftgw/etf/goto/snapshot/snapshot.jhtml?symbols=FRNW"
+ },
+ {
+  "name": "FIDELITY SUSTAINABILITY US EQUITY ETF",
+  "nemo": "FSST",
+  "administrator": "Fidelity",
+  "value_type": "RV",
+  "esg_score": 8.24,
+  "carbon_intensity": 123.71,
+  "url": "https://screener.fidelity.com/ftgw/etf/goto/snapshot/snapshot.jhtml?symbols=FSST"
+ },
+ {
+  "name": "First Trust Global Wind Energy ETF",
+  "nemo": "FAN",
+  "administrator": "First Trust",
+  "value_type": "RV",
+  "esg_score": 8.76,
+  "carbon_intensity": 817.72,
+  "url": "https://www.ftportfolios.com/Retail/Etf/EtfSummary.aspx?Ticker=FAN"
+ },
+ {
+  "name": "First Trust NASDAQ Clean Edge Green Energy Index Fund",
+  "nemo": "QCLN",
+  "administrator": "First Trust",
+  "value_type": "RV",
+  "esg_score": 6.49,
+  "carbon_intensity": 189.75,
+  "url": "https://www.ftportfolios.com/Retail/Etf/EtfSummary.aspx?Ticker=QCLN"
+ },
+ {
+  "name": "First Trust EIP Carbon Impact ETF",
+  "nemo": "ECLN",
+  "administrator": "First Trust",
+  "value_type": "RV",
+  "esg_score": 8.01,
+  "carbon_intensity": 1407.46,
+  "url": "https://www.ftportfolios.com/Retail/Etf/EtfSummary.aspx?Ticker=ECLN"
+ },
+ {
+  "name": "Global X Clean Water ETF",
+  "nemo": "AQWA",
+  "administrator": "Global X",
+  "value_type": "RV",
+  "esg_score": 10,
+  "carbon_intensity": 150.45,
+  "url": "https://www.globalxetfs.com/funds/aqwa/"
+ },
+ {
+  "name": "Global X CleanTech ETF",
+  "nemo": "CTEC",
+  "administrator": "Global X",
+  "value_type": "RV",
+  "esg_score": 6.53,
+  "carbon_intensity": 267.07,
+  "url": "https://www.globalxetfs.com/funds/ctec/"
+ },
+ {
+  "name": "Global X Wind Energy ETF",
+  "nemo": "WNDY",
+  "administrator": "Global X",
+  "value_type": "RV",
+  "esg_score": 6.95,
+  "carbon_intensity": 631.49,
+  "url": "https://www.globalxetfs.com/funds/wndy/"
+ },
+ {
+  "name": "Global X Green Building ETF",
+  "nemo": "GRNR",
+  "administrator": "Global X",
+  "value_type": "RV",
+  "esg_score": 0,
+  "carbon_intensity": 0,
+  "url": "https://www.globalxetfs.com/funds/grnr/"
+ },
+ {
+  "name": "Global X nHydrogen ETF",
+  "nemo": "HYDR",
+  "administrator": "Global X",
+  "value_type": "RV",
+  "esg_score": 7.59,
+  "carbon_intensity": 215.54,
+  "url": "https://www.globalxetfs.com/funds/hydr/"
+ },
+ {
+  "name": "Global X nAgTech & Food Innovation ETF",
+  "nemo": "KROP",
+  "administrator": "Global X",
+  "value_type": "RV",
+  "esg_score": 6.47,
+  "carbon_intensity": 173.68,
+  "url": "https://www.globalxetfs.com/funds/krop/"
+ },
+ {
+  "name": "Global X nRenewable Energy Producers ETF",
+  "nemo": "RNRG",
+  "administrator": "Global X",
+  "value_type": "RV",
+  "esg_score": 8.62,
+  "carbon_intensity": 606.16,
+  "url": "https://www.globalxetfs.com/funds/rnrg/"
+ },
+ {
+  "name": "Goldman Sachs Future Planet Equity ETF",
+  "nemo": "GSFP",
+  "administrator": "Goldman Sachs",
+  "value_type": "RV",
+  "esg_score": 8.42,
+  "carbon_intensity": 286.92,
+  "url": "https://www.gsam.com/content/gsam/us/en/individual/products/etf-fund-finder/goldman-sachs-future-planet-equity-etf.html#activeTab=overview"
+ },
+ {
+  "name": "Goldman Sachs Bloomberg Clean Energy Equity ETF",
+  "nemo": "GCLN",
+  "administrator": "Goldman Sachs",
+  "value_type": "RV",
+  "esg_score": 0,
+  "carbon_intensity": 0,
+  "url": "https://www.gsam.com/content/gsam/us/en/individual/products/etf-fund-finder/goldman-sachs-bloomberg-clean-energy-equity-etf.html#activeTab=overview"
+ },
+ {
+  "name": "Humankind U.S. Stock ETF",
+  "nemo": "HKND",
+  "administrator": "Humankind",
+  "value_type": "RV",
+  "esg_score": 7.51,
+  "carbon_intensity": 74.53,
+  "url": "https://www.humankindfunds.com/"
+ },
+ {
+  "name": "Impact Shares NAACP Minority Empowerment ETF",
+  "nemo": "NACP",
+  "administrator": "Impact Shares",
+  "value_type": "RV",
+  "esg_score": 7.6,
+  "carbon_intensity": 152.42,
+  "url": "https://impactetfs.org/nacp-etf/"
+ },
+ {
+  "name": "Impact Shares YWCA Women's Empowerment ETF",
+  "nemo": "WOMN",
+  "administrator": "Impact Shares",
+  "value_type": "RV",
+  "esg_score": 7.51,
+  "carbon_intensity": 107.53,
+  "url": "https://impactetfs.org/womn-etf/"
+ },
+ {
+  "name": "Impact Shares Sustainable Development Goals Global Equity ETF",
+  "nemo": "SDGA",
+  "administrator": "Impact Shares",
+  "value_type": "RV",
+  "esg_score": 9.02,
+  "carbon_intensity": 74.63,
+  "url": "https://impactetfs.org/sdga-etf/"
+ },
+ {
+  "name": "Impact Shares Impact Shares MSCI Global Climate Select ETF",
+  "nemo": "NTZO",
+  "administrator": "Impact Shares",
+  "value_type": "RV",
+  "esg_score": 9.45,
+  "carbon_intensity": 27.5,
+  "url": "https://impactetfs.org/ntzo-etf/"
+ },
+ {
+  "name": "Invesco MSCI Sustainable Future ETF",
+  "nemo": "ERTH",
+  "administrator": "Invesco",
+  "value_type": "RV",
+  "esg_score": 7.09,
+  "carbon_intensity": 213.83,
+  "url": "https://www.invesco.com/us/financial-products/etfs/product-detail?audienceType=Investor&ticker=ERTH"
+ },
+ {
+  "name": "Invesco WilderHill Clean Energy ETF",
+  "nemo": "PBW",
+  "administrator": "Invesco",
+  "value_type": "RV",
+  "esg_score": 0,
+  "carbon_intensity": 0,
+  "url": "https://www.invesco.com/us/financial-products/etfs/product-detail?audienceType=Investor&ticker=PBW"
+ },
+ {
+  "name": "Invesco Solar ETF",
+  "nemo": "TAN",
+  "administrator": "Invesco",
+  "value_type": "RV",
+  "esg_score": 6.16,
+  "carbon_intensity": 332.41,
+  "url": "https://www.invesco.com/us/financial-products/etfs/product-detail?audienceType=Investor&ticker=TAN"
+ },
+ {
+  "name": "Invesco Water Resources ETF",
+  "nemo": "PHO",
+  "administrator": "Invesco",
+  "value_type": "RV",
+  "esg_score": 10,
+  "carbon_intensity": 75.53,
+  "url": "https://www.invesco.com/us/financial-products/etfs/product-detail?audienceType=Investor&ticker=PHO"
+ },
+ {
+  "name": "SPDR SSGA Gender Diversity Index ETF",
+  "nemo": "SHE",
+  "administrator": "State Street",
+  "value_type": "RV",
+  "esg_score": 7.67,
+  "carbon_intensity": 104.56,
+  "url": "https://www.ssga.com/us/en/individual/etfs/funds/spdr-ssga-gender-diversity-index-etf-she"
+ },
+ {
+  "name": "SPDR® Bloomberg SASB Developed Markets Ex US ESG Select ETF",
+  "nemo": "RDMX",
+  "administrator": "State Street",
+  "value_type": "RV",
+  "esg_score": 0,
+  "carbon_intensity": 0,
+  "url": "https://www.ssga.com/us/en/individual/etfs/funds/spdr-bloomberg-sasb-developed-markets-ex-us-esg-select-etf-rdmx"
+ },
+ {
+  "name": "SPDR® Bloomberg SASB Emerging Markets ESG Select ETF",
+  "nemo": "REMG",
+  "administrator": "State Street",
+  "value_type": "RV",
+  "esg_score": 0,
+  "carbon_intensity": 0,
+  "url": "https://www.ssga.com/us/en/individual/etfs/funds/spdr-bloomberg-sasb-emerging-markets-esg-select-etf-remg"
+ },
+ {
+  "name": "SPDR® Bloomberg SASB® Corporate Bond ESG Select ETF",
+  "nemo": "RBND",
+  "administrator": "State Street",
+  "value_type": "RF",
+  "esg_score": 9.45,
+  "carbon_intensity": 185.61,
+  "url": "https://www.ssga.com/us/en/individual/etfs/funds/spdr-bloomberg-sasb-corporate-bond-esg-select-etf-rbnd"
+ },
+ {
+  "name": "SPDR® MSCI ACWI Climate Paris Aligned ETF",
+  "nemo": "NZAC",
+  "administrator": "State Street",
+  "value_type": "RV",
+  "esg_score": 0,
+  "carbon_intensity": 0,
+  "url": "https://www.ssga.com/us/en/individual/etfs/funds/spdr-msci-acwi-climate-paris-aligned-etf-nzac"
+ },
+ {
+  "name": "SPDR® MSCI EAFE Fossil Fuel Reserves Free ETF",
+  "nemo": "EFAX",
+  "administrator": "State Street",
+  "value_type": "RV",
+  "esg_score": 9.08,
+  "carbon_intensity": 86.79,
+  "url": "https://www.ssga.com/us/en/individual/etfs/funds/spdr-msci-eafe-fossil-fuel-reserves-free-etf-efax"
+ },
+ {
+  "name": "SPDR® MSCI Emerging Markets Fossil Fuel Reserves Free ETF",
+  "nemo": "EEMX",
+  "administrator": "State Street",
+  "value_type": "RV",
+  "esg_score": 6,
+  "carbon_intensity": 223.93,
+  "url": "https://www.ssga.com/us/en/individual/etfs/funds/spdr-msci-emerging-markets-fossil-fuel-reserves-free-etf-eemx"
+ },
+ {
+  "name": "SPDR® MSCI USA Climate Paris Aligned ETF",
+  "nemo": "NZUS",
+  "administrator": "State Street",
+  "value_type": "RV",
+  "esg_score": 0,
+  "carbon_intensity": 0,
+  "url": "https://www.ssga.com/us/en/individual/etfs/funds/spdr-msci-usa-climate-paris-aligned-etf-nzus"
+ },
+ {
+  "name": "SPDR® S&P 500® ESG ETF",
+  "nemo": "EFIV",
+  "administrator": "State Street",
+  "value_type": "RV",
+  "esg_score": 8.26,
+  "carbon_intensity": 101.38,
+  "url": "https://www.ssga.com/us/en/individual/etfs/funds/spdr-sp-500-esg-etf-efiv"
+ },
+ {
+  "name": "SPDR® S&P Kensho Clean Power ETF",
+  "nemo": "CNRG",
+  "administrator": "State Street",
+  "value_type": "RV",
+  "esg_score": 7.12,
+  "carbon_intensity": 658.87,
+  "url": "https://www.ssga.com/us/en/individual/etfs/funds/spdr-sp-kensho-clean-power-etf-cnrg"
+ },
+ {
+  "name": "SPDR® S&P® 500 Fossil Fuel Reserves Free ETF",
+  "nemo": "SPYX",
+  "administrator": "State Street",
+  "value_type": "RV",
+  "esg_score": 7.9,
+  "carbon_intensity": 123.82,
+  "url": "https://www.ssga.com/us/en/individual/etfs/funds/spdr-sp-500-fossil-fuel-reserves-free-etf-spyx"
+ },
+ {
+  "name": "Vanguard ESG U.S. Stock ETF ",
+  "nemo": "ESGV",
+  "administrator": "Vanguard",
+  "value_type": "RV",
+  "esg_score": 7.78,
+  "carbon_intensity": 66.19,
+  "url": "https://investor.vanguard.com/etf/profile/overview/esgv"
+ },
+ {
+  "name": "Vanguard ESG U.S. Corporate Bond ETF ",
+  "nemo": "VCEB",
+  "administrator": "Vanguard",
+  "value_type": "RF",
+  "esg_score": 9.21,
+  "carbon_intensity": 35.32,
+  "url": "https://investor.vanguard.com/etf/profile/VCEB"
+ },
+ {
+  "name": "Vanguard ESG International Stock ETF",
+  "nemo": "VSGX",
+  "administrator": "Vanguard",
+  "value_type": "RV",
+  "esg_score": 8.38,
+  "carbon_intensity": 128.78,
+  "url": "https://investor.vanguard.com/etf/profile/overview/vsgx"
+ },
+ {
+  "name": "Engine No. 1 Transform 500 ETF",
+  "nemo": "VOTE",
+  "administrator": "Engine No. 1",
+  "value_type": "RV",
+  "esg_score": 7.72,
+  "carbon_intensity": 119.15,
+  "url": "https://etf.engine1.com/vote"
+ },
+ {
+  "name": "Engine No. 1 Transform Climate ETF",
+  "nemo": "NETZ",
+  "administrator": "Engine No. 1",
+  "value_type": "RV",
+  "esg_score": 0,
+  "carbon_intensity": 0,
+  "url": "https://etf.engine1.com/netz"
+ }
+]
