@@ -5,7 +5,7 @@ import portfolio from "./routes/portfolio.js";
 import userRouter from "./routes/user.js";
 import questionRouter from "./routes/question.js"
 import etf from "./routes/etf.js"
-
+import goal from "./routes/goal.js"
 const app = express();
 
 // Settings
@@ -18,6 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Routes
+app.use(goal);
 app.use(userRouter);
 app.use(questionRouter);
 app.use(portfolio);

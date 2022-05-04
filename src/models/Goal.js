@@ -1,43 +1,37 @@
 
 import { DataTypes } from "sequelize";
 import { sequelize } from "../database/database.js";
-import {Goal} from "./Goal.js"
-export const User = sequelize.define(
-  "users",
+import { User } from "./User.js";
+import { Portfolio } from "./Portfolio.js";
+export const Goal = sequelize.define(
+  "goals",
   {
-    userId: {
+    id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
     },
-    firstName: {
+    title: {
       type: DataTypes.STRING,
     },
-    lastName: {
+    description: {
       type: DataTypes.STRING,
     },
-    email: {
-      type: DataTypes.STRING,
-    },  
-    password: {
-      type: DataTypes.STRING,
-    },
-    riskProfile: {
+    duration: {
       type: DataTypes.INTEGER,
-      allowNull: true,
     },
-    phone: {
+    picture: {
       type: DataTypes.STRING,
       allowNull: true,
     },
-    run: {
-      type: DataTypes.STRING,
-      allowNull: true,
+    amount: {
+      type: DataTypes.INTEGER,
     },
-    
   },
   {
     timestamps: true,
   }
-);
-
+  );
+// User.hasMany(Goal);
+// Goal.belongsTo(User);
+// Goal.bolongsTo(Portfolio);
