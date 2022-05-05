@@ -7,15 +7,15 @@ import {
   deleteUser,
   loginUser,
 } from "../controllers/users.controller.js";
-
+import auth from "../middlewares/auth.js";
 
 const router = express.Router();
 // User CRUD
-router.post("/signin,", loginUser)
-router.post("/signup", createUser);
-router.get("/users", getAllUsers);
-router.get("/users/:id", getUser);
-// router.put("/tasks/:id", updateTask);
+router.post("/signin,", auth, loginUser)
+router.post("/signup", auth, createUser);
+router.get("/users", auth, getAllUsers);
+router.get("/users/:id", auth, getUser);
+// router.put("/user/:id", auth, updateUser);
 router.delete("/users/:id", deleteUser);
 
 export default router;

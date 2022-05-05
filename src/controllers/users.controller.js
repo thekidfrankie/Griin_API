@@ -21,7 +21,7 @@ export const loginUser = async (req, res) => {
       "test",
       { expiresIn: "1h" }
     );
-    res.status(200).json({ result: existingUser, token });
+    res.status(200).json({ auth: true, result: existingUser, token: token });
   } catch (error) {
     res.status(500).json({ message: "ups something whent wrong" });
   }

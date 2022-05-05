@@ -25,20 +25,29 @@ export const Portfolio = sequelize.define(
     risk_profile: {
       type: DataTypes.STRING,
     },
-    rentability: {
+    esg_score: {
       type: DataTypes.FLOAT,
     },
-    composition: {
-      type: DataTypes.JSON,
-    },
-    carbon_footprint: {
+    carbon_instensity: {
       type: DataTypes.FLOAT,
+    },
+    rentability_ytd: {
+      type: DataTypes.FLOAT,
+    },
+    rentability_1yr: {
+      type: DataTypes.FLOAT,
+    },
+    rentability_3yr: {
+      type: DataTypes.FLOAT,
+    },
+    description: {
+      type: DataTypes.STRING(600),
     },
   },
   {
     timestamps: false,
   }
 );
-Portfolio.hasMany(Goal);
-Portfolio.belongsToMany(Etf, { through: PortfolioComposition });
-Etf.belongsToMany(Portfolio, { through: PortfolioComposition });
+// Portfolio.hasMany(Goal);
+// Portfolio.belongsToMany(Etf, { through: PortfolioComposition });
+// Etf.belongsToMany(Portfolio, { through: PortfolioComposition });

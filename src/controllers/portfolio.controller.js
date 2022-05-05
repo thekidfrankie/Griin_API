@@ -1,32 +1,33 @@
 import { Portfolio } from "../models/Portfolio.js";
 
-// id PK
-// name: string
-// risk profile: string
-// etf: json
-// rentability: int
-// composition: json
-// carbon stamp: int
+// "name": 
+// "risk_profile": 
+// "esg_score": 
+// "carbon_instensity": 
+// "rentability_ytd": 
+// "rentability_1yr": 
+// "rentability_3yr": 
+// "description": 
 
 export const createPortfolio = async (req, res) => {
   try {
-    const { name, risk_profile, rentability, composition, carbon_stamp } = req.body;
-
-    const existingPortfolio = await Portfolio.findOne({ where: { name: name } });
+    const portfolio = req.body;
+    const existingPortfolio = await Portfolio.findOne({ where: { name: portfolio.name } });
     if (existingPortfolio) {
       return res.status(411).json({ message: "the portfolio is already created" });
     }
     let newPortfolio = await Portfolio.create(
       {
-        name: name,
-        risk_profile: risk_profile,
-        rentability: rentability,
-        composition: composition,
-        carbon_stamp: carbon_stamp
+        name: portfolio.name,
+        risk_profile: portfolio.risk_profile,
+        esg_score: portfolio.esg_score,
+        carbon_instensity: portfolio.carbon_instensity,
+        rentability_ytd: portfolio.rentability_ytd,
+        rentability_1yr: portfolio.rentability_1yr,
+        rentability_3yr: portfolio.rentability_3yr,
+        description: portfolio.description,
+
       },
-      {
-        fields: ["name", "risk_profile", "rentability", "composition", "carbon_stamp"],
-      }
     );
     res.json(newPortfolio);
   } catch (error) {
@@ -65,17 +66,12 @@ export const getPortfolio = async (req, res) => {
 export const UpdatePortfolio = async (req, res) => {
     try {
       const { id } = req.params;
-      const {  name, risk_profile, etf, rentability, composition, carbon_stamp } = req.body;
-  
-      const result = await Portfolio.findByPk(id);
-      result.name = name;
-      result.risk_profile = risk_profile;
-      result.etf = etf;
-      result.rentability = rentability;
-      result.composition = composition;
-      result.carbon_stamp = carbon_stamp;
-      await result.save();
-      res.json(result);
+      const portfolio = await findOne({
+        where: {id:id}
+      });
+      portfolio.set(req.body);
+      await portfolio.save();
+      res.json(portfolio);
     } catch (error) {
       res.status(500).json({
         message: error.message,
