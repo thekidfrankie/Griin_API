@@ -6,6 +6,7 @@ import {
 
 const router = express.Router();
 // Etf CRUD
-router.post("/etf", createGoal);
+router.post("/createGoal", createGoal);
+router.post("/getGoals/:id", createGoal);
 
 export default router;

@@ -1,4 +1,4 @@
-import { Portfolio } from "../models/Portfolio.js";
+import { Portfolio } from "../models/Portfolio.model.js";
 
 // "name": 
 // "risk_profile": 

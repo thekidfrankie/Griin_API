@@ -1,4 +1,4 @@
-import { Etf } from "../models/Etf.js";
+import { Etf } from "../models/Etf.model.js";
 
 // id PK
 // name: string

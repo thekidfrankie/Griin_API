@@ -6,4 +6,9 @@ export const configs = {
     port: process.env.DB_PORT || 5432,
     database: process.env.DB_DATABASE || "griin_dev",
   },
+  jwt: {
+    secret: "bezkoder-secret-key",
+    jwtExpiration: 3600,           // 1 hour
+    jwtRefreshExpiration: 86400,   // 24 hours
+  }
 };

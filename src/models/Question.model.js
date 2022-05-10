@@ -1,7 +1,6 @@
 
 import { DataTypes } from "sequelize";
 import { sequelize } from "../database/database.js";
-
 export const Question = sequelize.define(
   "questions",
   {

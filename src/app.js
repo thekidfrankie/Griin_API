@@ -1,11 +1,12 @@
 import express from "express";
 import cors from "cors";
 import morgan from "morgan";
-import portfolio from "./routes/portfolio.js";
-import userRouter from "./routes/user.js";
-import questionRouter from "./routes/question.js"
-import etf from "./routes/etf.js"
-import goal from "./routes/goal.js"
+import portfolio from "./routes/portfolio.routes.js";
+import userRouter from "./routes/user.routes.js";
+import questionRouter from "./routes/question.routes.js"
+import etf from "./routes/etf.routes.js"
+import goal from "./routes/goal.routes.js"
+import auth from "./auth/auth.routes.js"
 const app = express();
 
 // Settings
@@ -18,6 +19,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Routes
+app.use(auth);
 app.use(goal);
 app.use(userRouter);
 app.use(questionRouter);

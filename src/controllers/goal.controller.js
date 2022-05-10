@@ -1,6 +1,6 @@
-import { Goal } from "../models/Goal.js";
-import { Portfolio } from "../models/Portfolio.js";
-import { User } from "../models/User.js";
+import { Goal } from "../models/Goal.model.js";
+import { Portfolio } from "../models/Portfolio.model.js";
+import { User } from "../models/User.model.js";
 
 //   id: INTEGER
 //   title:STRING
@@ -42,6 +42,18 @@ export const createGoal = async (req, res) => {
         }
       );
       res.json(newGoal);
+    } catch (error) {
+      res.status(500).json({
+        message: error.message,
+      });
+    }
+  };
+
+  export const getAllUserGoals = async (req, res) => {
+    try {
+      const { id } = req.params;
+      const allGoals = await Goal.findAll({where:{userUserId:id}});
+      res.json(allGoals);
     } catch (error) {
       res.status(500).json({
         message: error.message,

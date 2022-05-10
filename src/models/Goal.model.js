@@ -1,8 +1,8 @@
 
 import { DataTypes } from "sequelize";
 import { sequelize } from "../database/database.js";
-import { User } from "./User.js";
-import { Portfolio } from "./Portfolio.js";
+import { User } from "./User.model.js";
+import { Portfolio } from "./Portfolio.model.js";
 export const Goal = sequelize.define(
   "goals",
   {

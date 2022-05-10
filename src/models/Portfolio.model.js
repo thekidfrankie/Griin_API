@@ -1,8 +1,8 @@
 import { DataTypes } from "sequelize";
 import { sequelize } from "../database/database.js";
-import { PortfolioComposition } from "./portfolioComposition.js";
-import { Etf } from "./Etf.js";
-import { Goal } from "./Goal.js";
+import { PortfolioComposition } from "./PortfolioComposition.model.js";
+import { Etf } from "./Etf.model.js";
+import { Goal } from "./Goal.model.js";
 // id PK
 // name: string
 // risk profile: string
