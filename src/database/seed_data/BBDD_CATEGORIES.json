@@ -1,0 +1,42 @@
+[ 
+{
+"name":"compromiso con la sustentabilidad",
+"nemo":"cs1",
+"description":""
+}, 
+{
+"name":"Reducción de emisiones",
+"nemo":"re1",
+"description":""
+}, 
+{
+"name":"energías limpias",
+"nemo":"el1",
+"description":""
+}, 
+{
+"name":"uso eficiente del agua",
+"nemo":"uea1",
+"description":""
+},
+{ 
+"name":"Sustentabilidad",
+"nemo":"sus1",
+"description":""
+},
+{
+"name":"diversidad",
+"nemo":"div1",
+"description":""
+}, 
+{
+"name":"minorías",
+"nemo":"min1",
+"description":""
+}, 
+{
+"name":"Objetivos de desarrollo sustentable de la ONU",
+"nemo":"odso1",
+"description":""
+}
+]

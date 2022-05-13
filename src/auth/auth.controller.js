@@ -42,29 +42,31 @@ export const loginUser = async (req, res) => {
 
   export const createUser = async (req, res) => {
     try {
-      const { firstName, lastName, email, password, passwordConfirm } = req.body;
+      const body = req.body;
   
-      const existingUser = await User.findOne({ where: { email: email } });
+      const existingUser = await User.findOne({ where: { email: body.email } });
       if (existingUser) {
         return res.status(411).json({ message: "the user email is alredy used" });
       }
-      if (password !== passwordConfirm) {
+      if (body.password !== body.passwordConfirm) {
         return res
           .status(410)
           .json({ message: "the two passwords of the user dont match" });
       }
-      const hashedPassword = await bcrypt.hash(password, 12);
+      const hashedPassword = await bcrypt.hash(body.password, 12);
       let newUser = await User.create(
         {
-          firstName: firstName,
-          lastName: lastName,
-          email: email,
+          firstName: body.firstName,
+          lastName: body.lastName,
+          email: body.email,
           password: hashedPassword,
         },
         {
           fields: ["firstName", "lastName", "email", "password"],
         }
       );
+      // const userFirstGoal = await Goal.findOne({where:{uuid:user.goalUuid}});
+      // await newUser.addGoal(userFirstGoal);
       res.json(newUser);
     } catch (error) {
       res.status(500).json({

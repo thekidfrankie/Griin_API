@@ -24,7 +24,7 @@ RefreshToken.createToken = async function (user) {
   console.log(user.userId)
   let refreshToken = await this.create({
     token: _token,
-    userUserId: user.userId,
+    userUuid: user.uuid,
     expiryDate: expiredAt.getTime(),
   });
   return refreshToken.token;

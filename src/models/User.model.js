@@ -4,10 +4,10 @@ import { sequelize } from "../database/database.js";
 export const User = sequelize.define(
   "users",
   {
-    userId: {
-      type: DataTypes.INTEGER,
+    uuid: {
+      type: DataTypes.UUID,
+      defaultValue:DataTypes.UUIDV4 ,
       primaryKey: true,
-      autoIncrement: true,
     },
     firstName: {
       type: DataTypes.STRING,

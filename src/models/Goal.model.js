@@ -1,15 +1,13 @@
 
 import { DataTypes } from "sequelize";
 import { sequelize } from "../database/database.js";
-import { User } from "./User.model.js";
-import { Portfolio } from "./Portfolio.model.js";
 export const Goal = sequelize.define(
   "goals",
   {
-    id: {
-      type: DataTypes.INTEGER,
+    uuid: {
+      type: DataTypes.UUID,
+      defaultValue:DataTypes.UUIDV4 ,
       primaryKey: true,
-      autoIncrement: true,
     },
     title: {
       type: DataTypes.STRING,
