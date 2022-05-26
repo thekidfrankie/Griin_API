@@ -7,6 +7,7 @@ import questionRouter from "./routes/question.routes.js"
 import etf from "./routes/etf.routes.js"
 import goal from "./routes/goal.routes.js"
 import auth from "./auth/auth.routes.js"
+import 'dotenv/config'
 const app = express();
 
 // Settings

@@ -1,10 +1,10 @@
 "use strict";
 const etfs = require("../seed_data/BBDD ETF refactor (1).json");
-const portfolios_list = require("../seed_data/BBDD Matriz Portafolios (1).cjs");
+const portfolios_list = require("../seed_data/BBDD Matriz Portafolios (1).json");
 const categories = require("../seed_data/BBDD_CATEGORIES.json")
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.bulkInsert("portfolios", portfolios_list, {});
+    // await queryInterface.bulkInsert("portfolios", portfolios_list, {});
     await queryInterface.bulkInsert("etfs", etfs, {});
     await queryInterface.bulkInsert("categories", categories, {});
     // portfolios_list.forEach(async (portfolio) => {

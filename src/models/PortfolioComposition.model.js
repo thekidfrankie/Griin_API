@@ -5,7 +5,7 @@ import { DataTypes } from "sequelize";
 // import { Portfolio } from "./Portfolio.model.js";
 // junction table for portfolio and etf tables
 export const PortfolioComposition = sequelize.define(
-  "portflio_composition",
+  "portfolio_composition",
   {
     etfAmount:{
       type: DataTypes.INTEGER,

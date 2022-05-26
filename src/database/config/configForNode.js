@@ -7,8 +7,8 @@ export const configs = {
     database: process.env.DB_DATABASE || "griin_dev",
   },
   jwt: {
-    secret: "bezkoder-secret-key",
-    jwtExpiration: 3600,           // 1 hour
-    jwtRefreshExpiration: 86400,   // 24 hours
+    secret: process.env.JWT_SECRET || "bezkoder-secret-key",
+    jwtExpiration: process.env.JWT_EXPIRATION || 3600,           // 1 hour
+    jwtRefreshExpiration: process.env.JWT_REFRESH || 86400,   // 24 hours
   }
 };
