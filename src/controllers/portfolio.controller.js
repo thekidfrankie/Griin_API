@@ -118,13 +118,15 @@ export const getPortfolio = async (req, res) => {
     const { risk_profile, personal_values, invest_duration } = req.body.body;
     // if the duration is less than a year for regulatory terms we only can recommend a conservative risk profile portfolio
     if(!risk_profile || !personal_values || !invest_duration){
+      console.log("error missing parameters")
       return res.status(401).json({message:"error missing parameters"})
     }
 
     // case where the investement time will be less than 1 year, for regultaions we have to recomend a conservative profile portfolio
     if(invest_duration <=1 ){
       const conservativePortfolios = await Portfolio.findAll({where:{risk_profile: "Conservador"}});
-      if(!portfolio){
+      console.log( risk_profile, personal_values, invest_duration)
+      if(!conservativePortfolios){
         return res.status(401).json({ status: 0, message: "Portfolio not found" });
       } else{
         let portfolio = [];
