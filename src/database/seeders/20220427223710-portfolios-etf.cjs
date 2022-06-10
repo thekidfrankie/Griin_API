@@ -1,6 +1,5 @@
 "use strict";
 const etfs = require("../seed_data/BBDD ETF refactor (1).json");
-const portfolios_list = require("../seed_data/BBDD Matriz Portafolios (1).json");
 const categories = require("../seed_data/BBDD_CATEGORIES.json")
 module.exports = {
   async up(queryInterface, Sequelize) {

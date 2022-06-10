@@ -42,8 +42,8 @@ export const loginUser = async (req, res) => {
 
   export const createUser = async (req, res) => {
     try {
-      const body = req.body;
-  
+      const body = req.body.body;
+      console.log(body)
       const existingUser = await User.findOne({ where: { email: body.email } });
       if (existingUser) {
         return res.status(411).json({ message: "the user email is alredy used" });
@@ -67,6 +67,7 @@ export const loginUser = async (req, res) => {
       );
       // const userFirstGoal = await Goal.findOne({where:{uuid:user.goalUuid}});
       // await newUser.addGoal(userFirstGoal);
+      console.log(newUser)
       res.json(newUser);
     } catch (error) {
       res.status(500).json({

@@ -71,7 +71,7 @@ export const Portfolio = sequelize.define(
     categories_list: {
       type: DataTypes.JSONB,
     },
-    carbonintensity_portafoliocomparable: {
+    carbonintensity_equivalentportafolio: {
       type: DataTypes.FLOAT,
     },
     benchmark_carbonintensity: {
@@ -83,7 +83,7 @@ export const Portfolio = sequelize.define(
     benchmark_returnytd: {
       type: DataTypes.FLOAT,
     },   
-    benchmar_return1yr: {
+    benchmark_return1yr: {
       type: DataTypes.FLOAT,
     },   
     benchmark_return3yr: {

@@ -31,11 +31,11 @@ export const createPortfolio = async (req, res) => {
         themes: portfolio.themes,
         categories_list: portfolio.categories_list,
         etf_list: portfolio.etf_list,
-        carbonintensity_portafoliocomparable: portfolio.carbonintensity_portafoliocomparable,
+        carbonintensity_equivalentportafolio: portfolio.carbonintensity_equivalentportafolio,
         benchmark_carbonintensity: portfolio.benchmark_carbonintensity,
         diff_carbonintensity: portfolio.diff_carbonintensity,
         benchmark_returnytd: portfolio.benchmark_returnytd,
-        benchmar_return1yr: portfolio.benchmar_return1yr,
+        benchmark_return1yr: portfolio.benchmark_return1yr,
         benchmark_return3yr: portfolio.benchmark_return3yr,
         benchmark_esgscore: portfolio.benchmark_esgscore
       },
@@ -79,11 +79,11 @@ export const loadPortfoliosBatch = async (req, res) => {
           themes: element.themes,
           categories_list: element.categories_list,
           etf_list: element.etf_list,
-          carbonintensity_portafoliocomparable: element.carbonintensity_portafoliocomparable,
+          carbonintensity_equivalentportafolio: element.carbonintensity_equivalentportafolio,
           benchmark_carbonintensity: element.benchmark_carbonintensity,
           diff_carbonintensity: element.diff_carbonintensity,
           benchmark_returnytd: element.benchmark_returnytd,
-          benchmar_return1yr: element.benchmar_return1yr,
+          benchmark_return1yr: element.benchmark_return1yr,
           benchmark_return3yr: element.benchmark_return3yr,
           benchmark_esgscore: element.benchmark_esgscore
         },
@@ -121,17 +121,23 @@ export const getPortfolio = async (req, res) => {
       console.log("error missing parameters")
       return res.status(401).json({message:"error missing parameters"})
     }
-
+    //this code eliminate diplicated values in the array so we can match between portfolio array and this array 
+    let filtered_personal_values = personal_values.filter((element, index) => {
+      return personal_values.indexOf(element) === index;
+    });
+    console.log("no filtrado: ", personal_values)
+    console.log("filtrado: ", filtered_personal_values)
     // case where the investement time will be less than 1 year, for regultaions we have to recomend a conservative profile portfolio
     if(invest_duration <=1 ){
       const conservativePortfolios = await Portfolio.findAll({where:{risk_profile: "Conservador"}});
       console.log( risk_profile, personal_values, invest_duration)
       if(!conservativePortfolios){
+        console.log("portfolio not found with that risk profile")
         return res.status(401).json({ status: 0, message: "Portfolio not found" });
       } else{
         let portfolio = [];
         conservativePortfolios.forEach(actualPortfolio => {
-          if(JSON.stringify(actualPortfolio.dataValues.categories_list) == JSON.stringify(personal_values)){
+          if(JSON.stringify(actualPortfolio.dataValues.categories_list) == JSON.stringify(filtered_personal_values)){
             portfolio = actualPortfolio;
          }
         });
@@ -140,12 +146,13 @@ export const getPortfolio = async (req, res) => {
     }
     const portfolios = await Portfolio.findAll({ where: { risk_profile: risk_profile }});
     if (!portfolios) {
+      console.log("portfolio not found with that risk profile")
       return res.status(401).json({ status: 0, message: "Portfolio not found" });
     }
     let portfolio = [];
     portfolios.forEach(actualPortfolio => {
       // since this array is always very small this solution (stringify arrays) is viable but if in the future the arrays get very big please change solution for a more optimized one
-      if(JSON.stringify(actualPortfolio.dataValues.categories_list) == JSON.stringify(personal_values)){
+      if(JSON.stringify(actualPortfolio.dataValues.categories_list) == JSON.stringify(filtered_personal_values)){
         portfolio = actualPortfolio;
      }
     });
