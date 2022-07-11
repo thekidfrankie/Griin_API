@@ -6,7 +6,8 @@ import { configs } from "../database/config/configForNode.js";
 
 export const loginUser = async (req, res) => {
   try {
-    const { email, password } = req.body;
+    console.log(req.body)
+    const { email, password } = req.body.body;
     const existingUser = await User.findOne({ where: { email: email } });
     if (!existingUser) {
       return res.status(404).json({ message: "user dont exist." });
@@ -78,12 +79,13 @@ export const loginUser = async (req, res) => {
 
   export const refreshToken = async (req, res)  => {
     const { refreshToken: requestToken } = req.body;
+    console.log(req.body)
     if (requestToken == null) {
       return res.status(403).json({ message: "Refresh Token is required!" });
     }
     try {
       let refreshToken = await RefreshToken.findOne({ where: { token: requestToken } });
-      console.log(refreshToken)
+      console.log("hoalhoalhas", refreshToken)
       if (!refreshToken) {
         res.status(403).json({ 
           auth: 4,
@@ -91,6 +93,7 @@ export const loginUser = async (req, res) => {
         return;
       }
       if (RefreshToken.verifyExpiration(refreshToken)) {
+        console.log("se destruye el token")
         RefreshToken.destroy({ where: { id: refreshToken.id } });
         
         res.status(403).json({
@@ -99,8 +102,10 @@ export const loginUser = async (req, res) => {
         });
         return;
       }
+      console.log("llegamos antes de sacar el usuario")
       const user = await refreshToken.getUser();
-      let newAccessToken = jwt.sign({ id: user.id }, config.secret, {
+      console.log("llegamos despue de sacar el usuario")
+      let newAccessToken = jwt.sign({ id: user.uuid }, configs.jwt.secret, {
         expiresIn: configs.jwt.jwtExpiration,
       });
       return res.status(200).json({
